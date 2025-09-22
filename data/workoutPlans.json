@@ -1,0 +1,57 @@
+{
+  "push": {
+    "name": "Push Day",
+    "description": "Focuses on upper body pushing muscles: chest, shoulders, and triceps.",
+    "exercises": [
+      { "name": "Bench Press", "sets": 3, "reps": "8-12" },
+      { "name": "Overhead Press", "sets": 3, "reps": "8-12" },
+      { "name": "Incline Dumbbell Press", "sets": 3, "reps": "10-15" },
+      { "name": "Lateral Raises", "sets": 3, "reps": "12-15" },
+      { "name": "Tricep Pushdowns", "sets": 3, "reps": "12-15" }
+    ]
+  },
+  "pull": {
+    "name": "Pull Day",
+    "description": "Focuses on upper body pulling muscles: back and biceps.",
+    "exercises": [
+      { "name": "Pull-Ups (or Lat Pulldowns)", "sets": 3, "reps": "6-10" },
+      { "name": "Bent-Over Rows", "sets": 3, "reps": "8-12" },
+      { "name": "Seated Cable Rows", "sets": 3, "reps": "10-15" },
+      { "name": "Face Pulls", "sets": 3, "reps": "15-20" },
+      { "name": "Bicep Curls", "sets": 3, "reps": "12-15" }
+    ]
+  },
+  "legs": {
+    "name": "Leg Day",
+    "description": "Focuses on lower body muscles: quads, hamstrings, glutes, and calves.",
+    "exercises": [
+      { "name": "Squats", "sets": 3, "reps": "8-12" },
+      { "name": "Romanian Deadlifts", "sets": 3, "reps": "10-15" },
+      { "name": "Leg Press", "sets": 3, "reps": "12-15" },
+      { "name": "Leg Curls", "sets": 3, "reps": "12-15" },
+      { "name": "Calf Raises", "sets": 4, "reps": "15-20" }
+    ]
+  },
+  "functional": {
+    "name": "Functional Training",
+    "description": "A full-body workout designed to improve strength and stability for daily activities.",
+    "exercises": [
+      { "name": "Kettlebell Swings", "sets": 4, "reps": "15-20" },
+      { "name": "Goblet Squats", "sets": 3, "reps": "10-15" },
+      { "name": "Farmer's Walk", "sets": 3, "reps": "30 seconds" },
+      { "name": "Push-ups", "sets": 3, "reps": "As many as possible" },
+      { "name": "Plank", "sets": 3, "reps": "60 seconds" }
+    ]
+  },
+  "yoga": {
+    "name": "Yoga / Flexibility",
+    "description": "A calming session to improve flexibility, balance, and reduce stress.",
+    "exercises": [
+      { "name": "Sun Salutation", "sets": 5, "reps": "Rounds" },
+      { "name": "Downward-Facing Dog", "sets": 1, "reps": "60 seconds" },
+      { "name": "Warrior II", "sets": 2, "reps": "30 seconds per side" },
+      { "name": "Pigeon Pose", "sets": 2, "reps": "60 seconds per side" },
+      { "name": "Child's Pose", "sets": 1, "reps": "2 minutes" }
+    ]
+  }
+}

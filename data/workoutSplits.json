@@ -1,0 +1,38 @@
+{
+  "ppl": {
+    "name": "Push, Pull, Legs",
+    "plan": {
+      "monday": "push",
+      "tuesday": "pull",
+      "wednesday": "legs",
+      "thursday": "rest",
+      "friday": "push",
+      "saturday": "pull",
+      "sunday": "rest"
+    }
+  },
+  "fullBody": {
+    "name": "Full Body (3x Week)",
+    "plan": {
+      "monday": "functional",
+      "tuesday": "rest",
+      "wednesday": "functional",
+      "thursday": "rest",
+      "friday": "functional",
+      "saturday": "rest",
+      "sunday": "rest"
+    }
+  },
+  "balanced": {
+    "name": "Balanced Wellness",
+    "plan": {
+        "monday": "strength",
+        "tuesday": "cardio",
+        "wednesday": "rest",
+        "thursday": "strength",
+        "friday": "yoga",
+        "saturday": "cardio",
+        "sunday": "rest"
+    }
+  }
+}

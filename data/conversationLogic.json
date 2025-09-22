@@ -1,0 +1,223 @@
+{
+  "keywords": {
+    "stress": [
+      {"word":"stressed","weight":2},
+      {"word":"overwhelmed","weight":3},
+      {"word":"anxious","weight":3},
+      {"word":"pressure","weight":1},
+      {"word":"burnout","weight":4}
+    ],
+    "sadness": [
+      {"word":"sad","weight":2},
+      {"word":"lonely","weight":3},
+      {"word":"depressed","weight":5}
+    ]
+  },
+  "response_fragments": {
+    "stress": [
+      "You're carrying a lot right now — that heaviness is important to notice and treat kindly.",
+      "It makes sense to feel tense when things pile up — your body's reacting to pressure."
+    ],
+    "sadness": [
+      "I'm really sorry you're feeling this. Sadness can be so heavy.",
+      "It's okay to slow down — rest is often the most compassionate move when sorrow is present."
+    ]
+  },
+  "interventions": {
+    "stress_intervention": {
+      "step1_text": "You sound stressed. Would you like a short grounding routine, help to prioritize tasks, or a paced breathing exercise?",
+      "step1_options": ["Grounding routine","Prioritize tasks","Box breathing"]
+    }
+  },
+  "contextual_replies": {
+      "affirmative": ["yes","ok","sure","alright","yeah"],
+      "negative": ["no","nope","not really","nah"]
+  },
+  "responses": {
+    "openers": [
+      "Thank you for sharing that.",
+      "I hear you — that sounds important."
+    ],
+    "closers": [
+      "Remember to be kind to yourself.",
+      "Your feelings are valid."
+    ],
+    "fallbacks": {
+        "positive": "That sounds like a positive moment — thanks for sharing it.",
+        "negative": "It sounds like a heavy moment — thank you for opening up about it.",
+        "neutral": "I see. Could you tell me a little more about what's on your mind?"
+    }
+  },
+  "techniques": {
+    "box_breathing": {
+      "title": "Box Breathing",
+      "steps": [
+        "Inhale slowly for 4 counts.",
+        "Hold for 4 counts.",
+        "Exhale gently for 4 counts.",
+        "Hold for 4 counts."
+      ],
+      "duration": "1 minute",
+      "evidence": "Used by Navy SEALs and clinicians to regulate stress."
+    },
+    "double_exhale": {
+      "title": "Double Exhale Breathing",
+      "steps": [
+        "Inhale gently through your nose for 4 counts.",
+        "Exhale slowly through your mouth for 8 counts.",
+        "Repeat this cycle for 5 breaths."
+      ],
+      "duration": "1–2 minutes",
+      "evidence": "Extended exhalation boosts vagal tone, calming the nervous system."
+    },
+    "478_breathing": {
+      "title": "4-7-8 Breathing",
+      "steps": [
+        "Inhale through the nose for 4 counts.",
+        "Hold the breath for 7 counts.",
+        "Exhale slowly through the mouth for 8 counts.",
+        "Repeat 4 times."
+      ],
+      "duration": "2 minutes",
+      "evidence": "Developed by Dr. Andrew Weil; reduces anxiety and aids sleep."
+    },
+    "diaphragmatic_breathing": {
+      "title": "Diaphragmatic Breathing",
+      "steps": [
+        "Place one hand on your chest and one on your belly.",
+        "Inhale deeply so your belly rises while your chest stays still.",
+        "Exhale slowly and fully.",
+        "Repeat for 5–10 breaths."
+      ],
+      "duration": "3 minutes",
+      "evidence": "Reduces cortisol and muscle tension."
+    },
+    "alternate_nostril": {
+      "title": "Alternate Nostril Breathing",
+      "steps": [
+        "Close your right nostril with your thumb and inhale through your left nostril.",
+        "Close your left nostril with your finger, release the right, and exhale through the right nostril.",
+        "Inhale through the right nostril, close it, and exhale through the left.",
+        "Repeat for 5 cycles."
+      ],
+      "duration": "3–5 minutes",
+      "evidence": "Balances autonomic nervous system and improves focus."
+    },
+    "grounding_5_senses": {
+      "title": "5-4-3-2-1 Grounding",
+      "steps": [
+        "Notice 5 things you can see.",
+        "Notice 4 things you can touch.",
+        "Notice 3 things you can hear.",
+        "Notice 2 things you can smell.",
+        "Notice 1 thing you can taste."
+      ],
+      "duration": "2 minutes",
+      "evidence": "Common CBT technique for panic and trauma grounding."
+    },
+    "body_scan": {
+      "title": "Body Scan Mindfulness",
+      "steps": [
+        "Close your eyes and bring attention to your forehead.",
+        "Notice any tension, breathe into it, then let it go.",
+        "Move attention down through your shoulders, chest, arms, and legs.",
+        "End with noticing your whole body at rest."
+      ],
+      "duration": "5–10 minutes",
+      "evidence": "Mindfulness-based stress reduction (MBSR) core practice."
+    },
+    "thought_defusion": {
+      "title": "Thought Defusion",
+      "steps": [
+        "Notice a troubling thought.",
+        "Imagine placing it on a cloud or leaf floating downstream.",
+        "Let it drift by without engaging with it.",
+        "Bring focus back to the present moment."
+      ],
+      "duration": "2–3 minutes",
+      "evidence": "ACT therapy technique; reduces rumination."
+    },
+    "three_good_things": {
+      "title": "3 Good Things",
+      "steps": [
+        "Think of 3 good things that happened today.",
+        "Write them down or say them aloud.",
+        "Reflect on why they matter."
+      ],
+      "duration": "2 minutes",
+      "evidence": "Positive psychology practice that boosts well-being."
+    },
+    "pmr": {
+      "title": "Progressive Muscle Relaxation",
+      "steps": [
+        "Tense your forehead for 5 seconds, then release.",
+        "Tense your shoulders for 5 seconds, then release.",
+        "Work down your arms, chest, legs, releasing each group.",
+        "Notice relaxation spreading."
+      ],
+      "duration": "5 minutes",
+      "evidence": "Reduces anxiety and aids sleep."
+    },
+    "tension_release_breath": {
+      "title": "Tension Release Breath",
+      "steps": [
+        "Inhale deeply and tense all muscles for 5 seconds.",
+        "Exhale forcefully, releasing tension.",
+        "Repeat 3 times."
+      ],
+      "duration": "1 minute",
+      "evidence": "Quick reset for stress and anger."
+    },
+    "shoulder_drop": {
+      "title": "Shoulder Drop",
+      "steps": [
+        "Lift shoulders towards ears while inhaling.",
+        "Hold for 2 seconds.",
+        "Exhale and drop shoulders completely.",
+        "Repeat 3–5 times."
+      ],
+      "duration": "1 minute",
+      "evidence": "Relieves neck and upper back tension."
+    },
+    "self_compassion_break": {
+      "title": "Self-Compassion Break",
+      "steps": [
+        "Say: 'This is a moment of suffering.'",
+        "Say: 'Suffering is part of being human.'",
+        "Place a hand on your heart: 'May I be kind to myself.'"
+      ],
+      "duration": "2 minutes",
+      "evidence": "Dr. Kristin Neff’s work — reduces self-criticism."
+    },
+    "safe_place": {
+      "title": "Safe Place Visualization",
+      "steps": [
+        "Close your eyes and imagine a place where you feel safe and calm.",
+        "Notice the colors, sounds, and sensations.",
+        "Stay in this scene for 1–2 minutes."
+      ],
+      "duration": "2 minutes",
+      "evidence": "Used in trauma therapy to promote safety."
+    },
+    "affirmation_reframing": {
+      "title": "Affirmation Reframing",
+      "steps": [
+        "Notice a negative thought (e.g., 'I’m not good enough').",
+        "Gently replace it with a balanced one (e.g., 'I’m learning and growing').",
+        "Repeat the new thought 3 times."
+      ],
+      "duration": "1 minute",
+      "evidence": "CBT-based reframing to reduce self-criticism."
+    },
+    "journaling_prompt": {
+      "title": "Reflective Journaling",
+      "steps": [
+        "Write down: 'What emotion am I feeling most strongly right now?'",
+        "Then: 'What triggered it?'",
+        "End with: 'What’s one small step I can take?'"
+      ],
+      "duration": "5 minutes",
+      "evidence": "Expressive writing improves emotional clarity."
+    }
+  }
+}
