@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { USDA_API_KEY } from '../../constants/ApiKeys.js';
+import Constants from 'expo-constants';
 
 const findNutrientValue = (nutrients, nutrientIds) => {
   const nutrient = nutrients.find(n => nutrientIds.includes(n.nutrientId));
@@ -7,8 +7,6 @@ const findNutrientValue = (nutrients, nutrientIds) => {
 };
 
 const calculateRelevanceScore = (food, query) => {
-  // --- THIS IS THE FIX ---
-  // If the food has no description, give it the lowest possible score so it sinks to the bottom.
   if (!food.description) {
     return -1000;
   }
@@ -23,7 +21,7 @@ const calculateRelevanceScore = (food, query) => {
   score -= Math.abs(name.length - lowerQuery.length);
 
   if (food.dataType === 'Branded' && query.split(' ').length < 3) {
-      score -= 50;
+    score -= 50;
   }
   return score;
 };
@@ -36,7 +34,7 @@ export const searchUsdaProductsByName = async (query) => {
     console.log(`Searching USDA for: ${query}`);
     const response = await axios.get('https://api.nal.usda.gov/fdc/v1/foods/search', {
       params: {
-        api_key: USDA_API_KEY,
+        api_key: Constants.expoConfig.extra.USDA_API_KEY,
         query: query,
         dataType: "Foundation,SR Legacy,Branded",
         pageSize: 50,
@@ -45,8 +43,6 @@ export const searchUsdaProductsByName = async (query) => {
 
     if (response.data.foods && response.data.foods.length > 0) {
       const results = response.data.foods
-        // --- THIS IS THE FIX ---
-        // First, filter out any results that don't have the essential data we need.
         .filter(food => food && food.fdcId && food.description)
         .map(food => {
           const nutrients = food.foodNutrients || [];

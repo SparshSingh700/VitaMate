@@ -1,10 +1,9 @@
 // services/ai/geminiService.js
 import axios from 'axios';
-import { GEMINI_API_KEY } from '../../constants/ApiKeys.js';
+import Constants from 'expo-constants';
 import { Alert } from 'react-native';
 
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
-
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${Constants.expoConfig.extra.GEMINI_API_KEY}`;
 // --- UPDATED: Now accepts a specialRequest parameter ---
 const buildWeeklyWorkoutPrompt = (userProfile, existingPlan, specialRequest) => {
     const { age, weight, height, gender, goal } = userProfile;
